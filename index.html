@@ -1,59 +1,182 @@
-
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>高子鈞的個人網站</title>
+  <meta
+    name="description"
+    content="高子鈞的個人網站，介紹程式技能、興趣與聯絡方式。"
+  >
+  <title>高子鈞｜個人網站</title>
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #2c3e50; color: white; text-align: center; padding: 40px 0; }
-    header h1 { margin: 0; font-size: 2.5em; }
-    header p { font-size: 1.2em; }
-    .container { width: 80%; margin: 20px auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    .photo { text-align: center; margin-bottom: 20px; }
-    .photo img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; }
-    h2 { color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 5px; }
-    ul { list-style: none; padding: 0; }
-    ul li { background: #ecf0f1; margin: 5px 0; padding: 10px; border-radius: 4px; }
-    footer { text-align: center; padding: 20px; background: #2c3e50; color: white; margin-top: 20px; }
-    a { color: #3498db; text-decoration: none; }
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f6f8;
+      color: #243447;
+      font-family:
+        Arial, "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 55px 20px;
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.6rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.15rem;
+    }
+
+    .container {
+      width: min(900px, calc(100% - 32px));
+      margin: 28px auto;
+      padding: 32px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 110px;
+      height: 110px;
+      margin: 0 auto 28px;
+      border-radius: 50%;
+      background: #2c3e50;
+      color: white;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-top: 0;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e1e6eb;
+      color: #2c3e50;
+    }
+
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      margin: 8px 0;
+      padding: 12px 15px;
+      border-radius: 6px;
+      background: #ecf0f1;
+    }
+
+    a {
+      color: #1976b9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 22px;
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 40px 15px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .container {
+        padding: 22px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <h1>高子鈞</h1>
-    <p>程式設計愛好者 | 學習者 | 創作者</p>
+    <p>程式設計愛好者｜學習者｜創作者</p>
   </header>
 
-  <div class="container">
-    <div class="photo">
-      https://via.placeholder.com/150
+  <main class="container">
+    <div class="avatar" aria-label="高子鈞的姓名縮寫">
+      高
     </div>
 
     <section>
       <h2>關於我</h2>
-      <p>大家好，我是高子鈞，熱愛程式設計與新技術，喜歡挑戰與創新，並且樂於分享知識。</p>
+      <p>
+        大家好，我是高子鈞。我熱愛程式設計與新技術，
+        喜歡接受挑戰、探索不同的解決方法，並持續精進自己的資訊工程能力。
+      </p>
     </section>
 
     <section>
-      <h2>自介</h2>
+      <h2>技能與興趣</h2>
       <ul>
-        <li>c++ / c </li>
-        <li>$興趣愛好: 羽球、遊戲</li>
-        <li>2004/10/15</li>
+        <li>程式語言：C++、C</li>
+        <li>興趣：羽球、遊戲</li>
       </ul>
     </section>
 
     <section>
-      <h2>聯絡方式: 0978467118</h2>
-      <p>Email: 4112211227@gms.ndhu.edu.tw</p>
-      <p>GitHub:https://411221227-ship-it.github.io/My-Webste/ <a href="https://411221227-ship-it.github.io/My-Webste/</a></p>
+      <h2>聯絡方式</h2>
+      <p>
+        Email：
+        <a href="mailto:4112211227@gms.ndhu.edu.tw">
+          4112211227@gms.ndhu.edu.tw
+        </a>
+      </p>
+
+      <p>
+        GitHub：
+        <a
+          href="https://github.com/Andy-kao-74586"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          github.com/Andy-kao-74586
+        </a>
+      </p>
     </section>
-  </div>
+  </main>
 
   <footer>
-    <p>© 2025 高子鈞 | 使用 GitHub Pages 建立</p>
+    <p>© 2026 高子鈞｜使用 GitHub Pages 建立</p>
   </footer>
 </body>
 </html>
